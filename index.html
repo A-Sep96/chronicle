@@ -537,6 +537,33 @@ div:hover>.s-tip{display:block}
     padding-bottom:calc(env(safe-area-inset-bottom,0px) + 80px)!important;
   }
 }
+
+@media (max-width:600px){
+  /* Onboarding drive step — ensure buttons visible */
+  #ob-drive-status{display:flex;flex-direction:column;gap:10px}
+  #ob-drive-status button,#ob-drive-btn{
+    min-height:52px!important;
+    font-size:14px!important;
+  }
+  /* Make ob-flow-body taller on drive step */
+  .ob-flow-body{
+    -webkit-overflow-scrolling:touch!important;
+    overflow-y:auto!important;
+  }
+}
+
+@media (max-width:600px){
+  #settings-overlay{
+    align-items:center!important;
+    padding:1rem!important;
+  }
+  #settings-overlay .modal{
+    border-radius:20px!important;
+    max-height:80dvh!important;
+    width:100%!important;
+    padding-bottom:16px!important;
+  }
+}
 </style>
 </head>
 <body>
